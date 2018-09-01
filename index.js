@@ -17,14 +17,14 @@ class TokesStore extends DocumentStore {
    * @return {Promise} Returns a Promise that resolves to the multihash of 
    *                   the entry as a String
    */
-  async put({ _id, _tokens: newTokens = [] }) {
-    return new Promise((resolve, reject) => {
+  put({ _id, _tokens: newTokens = [] }) {
+    return new Promise(async (resolve, reject) => {
       if (!newTokens instanceof Array) {
         reject('_token must be an instance of Array');
       }
       const entries = super.get(_id).map(entry => entry);
       let tokensStored = entries.length > 0 ?
-        tokensStored = entries[0]._tokens :
+        entries[0]._tokens :
         [];
 
       const newTokenSet = new Set([...tokensStored, ...newTokens]);
