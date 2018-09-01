@@ -1,0 +1,28 @@
+{
+  "name": "orbitdb-tokenstore",
+  "version": "0.1.0",
+  "description": "OrbitDB Custom Store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magiceddy/orbitdb-tokenStore.git"
+  },
+  "keywords": [
+    "OrbitDB",
+    "Ethereum",
+    "ipfs",
+    "pubsub"
+  ],
+  "author": "Rinaldo Rossi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/magiceddy/orbitdb-tokenStore/issues"
+  },
+  "homepage": "https://github.com/magiceddy/orbitdb-tokenStore#readme",
+  "dependencies": {
+    "orbit-db-docstore": "^1.4.3"
+  }
+}
