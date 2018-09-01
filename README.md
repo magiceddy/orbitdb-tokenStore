@@ -27,7 +27,7 @@ const db = await orbitdb.open("test", {
 
 await db.put({ _id: 'myId', _tokens: ['DTH'] });
 await db.put({ _id: 'myId', _tokens: ['DTH', 'ZRX'] });
-await db.put({ _id: 'muId', _tokens: ['TTT'], price: '0.01 });
+await db.put({ _id: 'muId', _tokens: ['TTT'], price: '0.01' });
 
 db.get('myId').map((e) => console.log(e._tokens));
 // [{ _id: 'myId', _tokens: ['DTH', 'ZRX', 'TTT']}]
